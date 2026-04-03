@@ -696,6 +696,7 @@ height: 40vh;
 }
 .main-bu{
     font-size: 20px;
+    margin-top: 45px;
 }
 .main-text h1{
 font-size: 23px;
@@ -720,7 +721,10 @@ padding: 3px;
 }
 
 .card{
-    grid-template-columns: repeat(auto-fit, minmax(160px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(150px,auto));
+}
+.icon{
+    font-size: 12px;
 }
 .page-about img{
 width: 45%;
@@ -734,7 +738,7 @@ height: 30vh;
     grid-template-columns: repeat(auto-fit, minmax(200px,auto));
 }
 .card-car{
-    grid-template-columns: repeat(auto-fit, minmax(150px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(130px,auto));
     gap: 1rem;
 }
 .infor h3{
@@ -749,11 +753,18 @@ height: 30vh;
     margin: 5px;
     margin-left: 10px;
 }
+.older p{
+    font-size:13px;
+}
 .card-part img{
     height: 150px;
 }
 .review-t h1{
    margin-bottom: 30px;
+}
+.review-g{
+    grid-template-columns: repeat(auto-fit, minmax(140px,auto));
+    gap: 1rem;
 }
 .about-t{
     font-size: 15px;
