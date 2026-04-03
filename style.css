@@ -1,0 +1,778 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    
+}
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 10%;
+}
+.header img{
+   max-width: 40px;
+    height: 40px;
+}
+.menu {
+    display: flex;
+    gap: 10%;
+}
+.menuu{
+    display: flex;
+}
+.menu a{
+    color: rgb(65, 198, 227);
+    text-transform: capitalize;
+    font-size: 16px;
+    padding: 10px 10px;
+    font-weight: 400;
+    transition: all .42s ease;
+    align-items: center;
+
+
+}
+.menu a:hover{
+    color:rgb(93, 97, 97) ;
+    background-color: aqua;
+    border-radius: 20px;
+    padding: 7px;
+    box-shadow: 0 0 15px rgb(116, 223, 223);
+}
+
+.menuu{
+display: flex;
+align-items: center;
+gap: 15px;
+
+}
+.menuu a{
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(14, 13, 13);
+    transition: all .42s ease;
+}
+.menuu a:hover{
+    color: aqua;
+    font-size: 19px;
+    transform: scale(1.1);
+}
+#menu-icon{
+   color: rgb(92, 184, 238);
+   z-index: 101;
+   cursor: pointer; 
+}
+section{
+    padding: 5% 5%;
+}
+.main-home{
+   width: 100%;
+   height: 100vh;
+   background-image: url(img/bugatti-chiron-super-sport-300-prototype-5k-8k-3840x2160-633.jpg);
+   display: grid;
+   background-position: center;
+   background-size: cover;
+   grid-template-columns: repeat(1,1fr);
+   align-items: center;
+}
+.main-text{
+    margin-top: 60px;
+}
+.main-bu{
+    display: inline-block;
+    color: rgb(241, 244, 246);
+    font-size: 30px;
+    background-image:url(img3/sunset-1373171_640.jpg);
+    background-size: cover;
+    overflow: hidden;
+    text-transform: capitalize;
+    border: 2px solid rgb(144, 181, 9);
+    background-color: none;
+    font-weight: 500;
+    padding: 2px 25px;
+    transition: all.42s ease;
+    margin-top: 75px;
+    box-shadow: 0 0 15px rgb(21, 19, 19);
+}
+.main-bu:hover{
+    background-image:url(img4/images\ \(1\).jpg);
+    background-size: cover;
+    overflow: hidden;
+
+}
+.main-text h5{
+    font-size: 20px;
+    color: rgb(12, 16, 15);
+    
+}
+.main-text h1{
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: 600;
+}
+.main-text h1{
+    animation: typing 2s steps(70) infinite alternate-reverse;
+    overflow: hidden;
+    width: 11ch;
+    height: 7ch;
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    text-wrap: nowrap;
+    background-image:url(img3/sunset-1373171_640.jpg);
+} 
+@keyframes typing {
+    from {
+        width: 0ch;
+
+    }
+}
+p{
+    color: rgb(152, 164, 230);
+    font-size: 20px;
+    margin-top: 15px;
+}
+.next{
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    transition: all.42s ease;
+    font-size:50px;
+    color: white;
+}
+.next:hover{
+    color: rgb(113, 183, 226);
+
+}
+header.sticky{
+    background-color: rgb(233, 242, 242);
+    padding: 1px 10%;
+    
+}
+
+
+.header-text h2{
+    font-size: 40px;
+    text-align: center;
+     margin-bottom: 20px; 
+    color: rgb(12, 193, 193);
+}
+.header-text h3{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(141, 236, 236);
+}
+
+.gradient{
+    background: linear-gradient(90deg,green,pink,red,blue,yellow,green);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradientFlow 6s linear infinite;
+    font-size: 30px;
+    font-weight: bold;
+}
+@keyframes gradientFlow{
+    0%{
+        background-position: center;
+    }
+    100%{
+        background-position:200% center;
+    }
+}
+span{
+    animation: flow 6s linear infinite;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,auto));
+    gap: 2rem;
+} 
+.card-p{
+    background-color: rgb(198, 205, 209);
+    transition: all .42s;   
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    position: relative;   
+}
+
+.card-p img{
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    border-radius: 20px;
+    margin-top: 5%;
+    box-shadow: 0 0 15px black;
+    transition: all .42s;
+}
+.card-p img:hover{
+    transform: scale(0.95);
+}
+.icon{
+    margin-left: 20px;
+    margin-top: 5px;
+    gap: 2px;
+    font-size: 20px;
+    color: rgb(244, 215, 52);
+}
+#heart{
+    margin-left: 60px;
+    color: aliceblue;
+}
+#heart:hover{
+    color: aqua;
+    box-shadow: 0 0 10px blue;
+}
+.Products h3{
+    text-align: center;
+}
+.price h3{
+    text-align: center;
+    padding: 7px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10px;
+    box-shadow:  0 5px rgb(63, 58, 58);
+    /* border-bottom-left-radius:20px ; */
+    background-color: rgb(73, 249, 249);
+}
+#card-text h5{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    background-color: rgb(15, 211, 31);
+    font-size: 20px;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+/* part car */
+.part-text h2{
+text-align: center;
+color: rgb(108, 223, 238);
+font-size: 40px;
+}
+.part-text h3{
+text-align: center;
+color: rgb(98, 196, 231);
+font-size: 30px;
+}
+.l{
+padding-bottom: 30px;
+} 
+.card-car{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,auto));
+    gap: 1rem;
+}
+.card-part{
+    background-color: rgb(241, 240, 240);
+}
+.k{
+    margin-bottom: 20px;
+}
+
+.card-part img{
+    
+    width:90%;
+    height: 280px;
+    margin-left: 5%;
+    margin-top: 5%;
+    object-fit: contain;
+    /* object-position: center; */
+    transition: all .42s;
+    background-color: rgb(159, 193, 204);
+    box-shadow: 0 0 15px rgb(19, 19, 20);
+}
+.card-part img:hover{
+    transform: scale(0.95);
+}
+.infor h3{
+     font-size: 25px;
+     margin-left: 20px;
+}
+.infor p{
+    color: red;
+    font-weight: 700;
+    margin-left: 15px;
+    margin-top: 10px;
+}.older{
+    display: flex;
+    justify-content: space-between;
+}
+.older-buy{
+    background-color: rgb(231, 238, 231);
+    color: rgb(16, 16, 15);
+    padding: 10px;
+    margin: 10px;
+    margin-left: 20px;
+    box-shadow: 0 0 9px black;
+}
+.older p{
+    color: rgb(96, 149, 213);
+    margin-right: 10px;
+}
+
+
+/* page review */
+
+
+.page-review{
+    background-color:none;
+    
+}
+
+.review-t h1{
+font-size: 30px;
+text-align: center;
+margin-bottom: 25px;
+}
+
+.review-r{
+    background: linear-gradient(90deg,rgb(21, 130, 170),rgb(62, 140, 200),red,rgb(18, 18, 209),rgb(177, 35, 199),rgb(12, 119, 190));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: review-rFlow 6s linear infinite;
+    font-size: 30px;
+    font-weight: bold;
+}
+@keyframes review-rFlow{
+    0%{
+        background-position: center;
+    }
+    100%{
+        background-position:200% center;
+    }
+}    
+.review-g{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,auto));
+    gap: 2rem;
+}
+.review{
+    display: flex;
+    background-color: rgb(225, 230, 230);
+    box-shadow: 0 0 20px rgb(50, 49, 49);
+    border-radius: 5px;
+    gap: 10px;
+    
+}
+.review img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    
+}
+.name{
+    font-size: 20px;
+    margin-top: 10px;
+    color: rgb(15, 15, 15);
+}
+.name p{
+    color: rgb(20, 23, 23);
+}
+
+
+.rate1{
+    color: darkgoldenrod;
+}
+
+/*                */
+#Aboutus{
+    width: 100%;
+    padding: 0px 5%;
+}
+.page-about{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.page-about img{
+width: 65%;
+height: 90vh;
+}
+.about-t{
+    margin-top: 100px;
+    font-size: 20px;
+    
+}
+
+/* for endpage */
+.page-contect{
+    background-color: none;
+}
+.page-end{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,auto));
+    gap: 2rem;
+    background-color: rgb(137, 131, 131);
+}
+.contect{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    background-color: rgb(241, 237, 237);
+}
+
+
+.contect img{
+    width: 60px;
+    height: 60px;
+}
+
+
+.contect h3{
+    margin-right: 400px;
+    
+}
+.iboi h3{
+    font-size: 30px;
+    background-color: rgb(229, 219, 219);
+    margin: 2px;
+    margin-right:60%;
+}
+.iboi h5{
+    font-size: 20px;
+    background-color: rgb(229, 219, 219);
+    margin: 2px;
+    margin-right:80%;
+}
+.iboi img{
+    margin-top: 10px;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+.iboi a{
+    font-size: 20px;
+}
+
+/* for my feel */
+
+.myfeel{
+    background-color: rgb(241, 237, 237);
+    padding: 20px;
+}
+.myfeel h3{
+    font-size: 25px;
+}
+.myfeel p{
+    color: rgb(14, 13, 13);
+}
+.copyright{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 10px;
+}
+
+/* responsive */
+@media(max-width:890px){
+    header{
+        padding: 20px 3%;
+        transition: .4s;
+    }
+}
+ @media(max-width:750px){
+    .card-car{
+    grid-template-columns: repeat(auto-fit, minmax(190px,auto));
+    gap: 1rem;
+}
+.infor h3{
+     font-size: 15px;
+     margin-left: 10px;
+}
+.infor p{
+   font-size: 15px;
+}
+.older-buy{
+    padding: 5px;
+    margin: 5px;
+    margin-left: 10px;
+}
+    .menu{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 200px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 70px;
+        background-color: white;
+    }
+    .menu a{
+        color: black;
+        margin: 15px;
+        font-size: 25px;
+    }
+    .menu.open{
+        right: 0;
+    }
+    .main-home{
+    width: 100%;
+    height: 50vh;
+   background-image: url(img/bugatti-chiron-super-sport-300-prototype-5k-8k-3840x2160-633.jpg);
+   display: grid;
+   background-position: center;
+   background-size: cover;
+   grid-template-columns: repeat(1,1fr);
+   align-items: center;
+  }
+  .main-text h5{
+    font-size: 15px;
+    color: rgb(58, 120, 167);
+    
+}
+.main-text h1{
+    color: aliceblue;
+    font-size: 25px;
+    font-weight:300;
+}
+p{
+    color: rgb(152, 164, 230);
+    font-size: 15px;
+    margin-top: 15px;
+}
+.next{
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    
+}
+.header-text h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+   
+}
+.card-part img{
+    height: 180px;
+}
+
+.card{
+    grid-template-columns: repeat(auto-fit, minmax(170px,auto));
+    gap: 1rem;
+} 
+.card-p{
+        background-color: rgb(209, 198, 198);
+           
+}
+
+.card-p img{
+    width: 90%;
+    height: auto;
+   
+}
+.icon{
+
+    margin-left: 20px;
+    margin-top: 5px;
+    gap: 1px;
+    font-size: 15px;
+    color: rgb(244, 215, 52);
+}
+#heart{
+    margin-left: 30px;}  
+.review-t h1{
+font-size: 20px;
+margin-bottom: 10px; 
+}   
+
+.review-g{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px,auto));
+    gap: 2rem;
+}
+.review{
+    gap: 5px;
+}
+.review img{
+    width: 50px;
+    height: 50px;
+    margin-left: 1px;
+    
+}
+.name{
+    font-size: 15px;
+}
+.page-about img{
+width: 45%;
+height: 40vh;
+}
+.about-t{
+    margin-top: 15%;
+}
+.page-end{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,auto));
+    gap: 1rem;
+    background-color: rgb(137, 131, 131);
+}
+.page-contect{
+    padding: 15px;
+}
+.contect{
+    padding: 10px;
+    display: flex;
+    background-color: rgb(241, 237, 237);
+}
+
+.contect img{
+    width: 60px;
+    height: 60px;
+}
+.contect h3{
+    margin-right: 400px;
+    
+}
+.iboi h3{
+    font-size: 20px;
+    background-color: rgb(229, 219, 219);
+    margin: 2px;
+    margin-right:60%;
+}
+.iboi h5{
+    font-size: 15px;
+    background-color: rgb(229, 219, 219);
+    margin: 2px;
+    margin-right:80%;
+}
+.iboi img{
+    margin-top: 10px;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+.iboi a{
+    font-size: 15px;
+}
+.myfeel{
+    background-color: rgb(241, 237, 237);
+    padding: 10px;
+}
+.myfeel h3{
+      font-size: 20px;
+}
+.copyright{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 0px;
+}  
+}
+
+
+@media(max-width:450px){
+.card-p{
+
+    border-top-right-radius:20px ;
+    border-bottom-left-radius:20px ;
+} 
+.Products h3{
+    font-size: 15px;
+}   
+.main-home{
+    width: 100%;
+    height: 37vh;
+}
+.next{
+    top: 28%;
+    
+}
+.main-bu{
+    font-size: 20px;
+}
+.main-text h1{
+font-size: 23px;
+}
+.main-text p{
+    margin-top: 5px;
+}
+/* PRODACT */
+.price h3{
+    margin-left: 20%;
+margin-right: 20%;
+padding: 3px;
+}
+.review img{
+    margin: 5px;
+}
+.name{
+    font-size: 10px;
+}
+.name p{
+    font-size: 12px;
+}
+
+.card{
+    grid-template-columns: repeat(auto-fit, minmax(160px,auto));
+}
+.page-about img{
+width: 45%;
+height: 30vh;
+}
+.about-t{
+    margin-top: 1%;
+}
+.page-end{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,auto));
+}
+.card-car{
+    grid-template-columns: repeat(auto-fit, minmax(150px,auto));
+    gap: 1rem;
+}
+.infor h3{
+     font-size: 15px;
+     margin-left: 10px;
+}
+.infor p{
+   font-size: 15px;
+}
+.older-buy{
+    padding: 5px;
+    margin: 5px;
+    margin-left: 10px;
+}
+.card-part img{
+    height: 150px;
+}
+.review-t h1{
+   margin-bottom: 30px;
+}
+.about-t{
+    font-size: 15px;
+}
+.page-about p{
+    font-size: 15px;
+}
+.l{
+padding-bottom: 20px;
+}
+.main-text h1{
+    animation: typing 2s steps(70) infinite alternate-reverse;
+    overflow: hidden;
+    width: 11ch;
+    height: 7ch;
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    text-wrap: nowrap;
+    background-image:url(img3/sunset-1373171_640.jpg);
+}
+}
